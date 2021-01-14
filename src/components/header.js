@@ -36,7 +36,7 @@ Header.propTypes = {
 }
 
 Header.defaultProps = {
-  siteTitle: ``,
+  siteTitle: `Timebeat Helper`,
 }
 
 export default Header
