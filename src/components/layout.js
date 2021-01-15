@@ -150,6 +150,15 @@ const Layout = ({ children }) => {
           </form>
         </div>
         <h1>{currYear}</h1>
+
+        <iframe
+          src="https://open.spotify.com/embed/playlist/5AfLeoDRHCPw5UvUpdUdVM"
+          width="300"
+          height="380"
+          frameborder="0"
+          allowtransparency="true"
+          allow="encrypted-media"
+        ></iframe>
       </div>
     </>
   )
