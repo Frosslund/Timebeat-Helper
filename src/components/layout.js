@@ -59,6 +59,20 @@ const Layout = ({ children }) => {
     setCurrYear(curr_year)
   }
 
+  const calc_year = () => {
+    const curr_date = new Date()
+    const start = new Date(2021, 0, 1, 0, 0, 0, 0)
+    const start_year = 2020
+
+    const diff = Math.round(
+      (curr_date.getTime() - start.getTime()) / (1000 * 3600 * 24)
+    )
+
+    const curr_year = start_year - Math.floor(diff / 2)
+
+    return curr_year
+  }
+
   return (
     <>
       <Header siteTitle={"Timebeat Helper"} />
@@ -70,6 +84,11 @@ const Layout = ({ children }) => {
         }}
       >
         <div>
+          <h2>
+            Idag är det <strong>{calc_year()}</strong> som gäller.
+          </h2>
+          <hr />
+          <h4>Välj datum för att se vilket år som gäller då:</h4>
           <form>
             <select
               name="month"
