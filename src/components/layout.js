@@ -64,9 +64,7 @@ const Layout = ({ children }) => {
     const start = new Date(2021, 0, 1, 0, 0, 0, 0)
     const start_year = 2020
 
-    const diff = Math.round(
-      (curr_date.getTime() - start.getTime()) / (1000 * 3600 * 24)
-    )
+    const diff = (curr_date.getTime() - start.getTime()) / (1000 * 3600 * 24)
 
     const curr_year = start_year - Math.floor(diff / 2)
 
