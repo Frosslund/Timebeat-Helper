@@ -148,7 +148,12 @@ const Layout = ({ children }) => {
           </form>
         </div>
         <h1>{currYear}</h1>
+        <hr />
 
+        <a href="http://sortyourmusic.playlistmachinery.com/" target="_blank">
+          <h3>Sortera dina spellistor efter årtal</h3>
+        </a>
+        <hr />
         <iframe
           src="https://open.spotify.com/embed/playlist/5AfLeoDRHCPw5UvUpdUdVM"
           width="300"
